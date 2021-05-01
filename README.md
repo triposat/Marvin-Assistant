@@ -33,10 +33,21 @@
 
 ### Module needed:
 ```python 
-          from difflib import get_close_matches
-          import json
-          from plyer import notification
-          import time
+         import datetime
+         from plyer import notification
+         import requests
+         import json
+         import time
+         from difflib import get_close_matches
+         from datetime import date
+         import wikipedia
+         import smtplib
+         import webbrowser
+         import os
+         import pyautogui
+         import random
+         import pyjokes
+         import psutil
 ```
 
 ### Use of `plyer` module:
