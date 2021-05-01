@@ -95,6 +95,8 @@
 
 _________________________________
 
+### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant">Made with <img src="https://cutt.ly/lbllkDi" width="20px"> in India</a><h3/>
+
 <br/>
 <p align="center">
 <img src="https://badges.pufler.dev/updated/Iamtripathisatyam/Mini_Assistant?style=for-the-badge&logo=github&logoColor=yellow" alt=Iamtripathisatyam />
