@@ -43,6 +43,15 @@
    - **Restart Computer ⌨️🖱️**
    - **At last it will Thank You 🙏**
 
+### How will the assistant Send Email?
+   - [Check it here ](https://docs.python.org/3/library/email.examples.html)
+ 
+### How will the assistant tell Jokes?
+   - [Check it here ](https://pyjok.es/)
+ 
+### How will the assistant show Battery Percentage?
+   - [Check it here ](https://psutil.readthedocs.io/en/latest/)
+
 ### Prerequisite:
         ~ pip install plyer
         ~ pip install requests
@@ -71,8 +80,6 @@
       import pyjokes
       import psutil
 ```
-### How will the assistant send email?
-   - [Check it here ](https://docs.python.org/3/library/email.examples.html)
 
 ### Use of `plyer` module:
    - Used as a Desktop Notifier. 
