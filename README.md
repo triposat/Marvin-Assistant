@@ -80,26 +80,8 @@
       import pyjokes
       import psutil`
 ```
-### Use of [datetime](https://www.geeksforgeeks.org/python-datetime-module-with-examples/) module:
-### Use of `plyer` module:
-   - Used as a Desktop Notifier. 
-   - It produces a Notification Message in form of a POP-UP Message on Desktop.
-### Use of `json` module:
-   - Used to work with JSON Data. 
-   - If you have a JSON string, you can parse it by using the json.loads() method.
-### Use of `get_close_matches` module:
-   - This module provides classes and functions for comparing sequences. 
-   - It can be used for example, for comparing files, and can produce information about file differences in various formats.
-### Use of `time` module:
-   - This Module provides many ways of representing time in code, such as objects, numbers, and strings. 
-   - It also provides functionality other than representing time, like waiting during code execution and measuring the efficiency of your code.
-### Use of `requests` module:
-   - Use to send all kinds of HTTP requests. 
-   - The HTTP request returns a Response Object with all the response data (content, encoding, status, etc).
-### Use of `wikipedia` module:
-   - Wikipedia is a Python library that makes it easy to access and parse data from Wikipedia.
-### Use of `wikipedia` module:
-   - Wikipedia is a Python library that makes it easy to access and parse data from Wikipedia.
+### Use of [**datetime**](https://cutt.ly/wbljsgV) module
+### Use of [**datetime**](https://cutt.ly/ubljolF) module
 
 
 _________________________________
