@@ -21,7 +21,27 @@
 
 ### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://img.shields.io/badge/-MINI ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
   
-## What can Assistant do?
+### What can Assistant do?
+   - Wish you(Good Morning, Good Afternoon, and Good Evening) according to time
+   - Search the Wikipedia of items
+   - Searching the items on YouTube
+   - Tell you Time and Date
+   - Play Song
+   - Open WhatsApp
+   - Open LinkedIn
+   - Open GitHub
+   - Send Emails
+   - Show you the Battery % of your PC
+   - Tell you Joke
+   - Write your Notes, Save them, and Show them
+   - Take Screenshot 
+   - Corona Situation World-Wide
+   - Daily News 
+   - Search your Locations
+   - English Meaning of Anything 
+   - Shutdown Computer
+   - Restart Computer
+   - Thanking You
 
 ### Prerequisite:
         ~ pip install plyer
