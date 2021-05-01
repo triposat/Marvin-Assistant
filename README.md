@@ -64,23 +64,23 @@
 
 ### Module needed:
 ```python 
-      import datetime
-      from plyer import notification
-      import requests
-      import json
-      import time
-      from difflib import get_close_matches
-      from datetime import date
-      import wikipedia
+      import datetime`
+      from plyer import notification`
+      import requests`
+      import json`
+      import time `
+      from difflib import get_close_matches `
+      from datetime import date`
+      import wikipedia`
       import smtplib
       import webbrowser
       import os
       import pyautogui
       import random
       import pyjokes
-      import psutil
+      import psutil`
 ```
-
+### Use of [datetime](https://www.geeksforgeeks.org/python-datetime-module-with-examples/) module:
 ### Use of `plyer` module:
    - Used as a Desktop Notifier. 
    - It produces a Notification Message in form of a POP-UP Message on Desktop.
@@ -93,6 +93,15 @@
 ### Use of `time` module:
    - This Module provides many ways of representing time in code, such as objects, numbers, and strings. 
    - It also provides functionality other than representing time, like waiting during code execution and measuring the efficiency of your code.
+### Use of `requests` module:
+   - Use to send all kinds of HTTP requests. 
+   - The HTTP request returns a Response Object with all the response data (content, encoding, status, etc).
+### Use of `wikipedia` module:
+   - Wikipedia is a Python library that makes it easy to access and parse data from Wikipedia.
+### Use of `wikipedia` module:
+   - Wikipedia is a Python library that makes it easy to access and parse data from Wikipedia.
+
+
 _________________________________
 
 <br/>
