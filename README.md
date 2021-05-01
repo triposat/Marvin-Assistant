@@ -71,6 +71,8 @@
       import pyjokes
       import psutil
 ```
+### How will the assistant send email?
+   - [Check it here ](https://docs.python.org/3/library/email.examples.html)
 
 ### Use of `plyer` module:
    - Used as a Desktop Notifier. 
