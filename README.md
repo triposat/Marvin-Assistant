@@ -24,6 +24,12 @@
 ### Prerequisite:
 ```python
         ~ pip install plyer
+        ~ pip install requests
+        ~ pip install wikipedia
+        ~ pip install secure-smtplib
+        ~ pip install PyAutoGUI
+        ~ pip install pyjokes
+        ~ pip install psutil
         ~ .json file which I have provided in this Repository
 ```             
 
