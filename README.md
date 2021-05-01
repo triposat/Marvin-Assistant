@@ -44,13 +44,13 @@
    - **At last it will Thank You 🙏**
 
 ### How will the assistant Send Email?
-   - [Check it here ](https://docs.python.org/3/library/email.examples.html)
+   - [**Check it here**](https://docs.python.org/3/library/email.examples.html)
  
 ### How will the assistant tell Jokes?
-   - [Check it here ](https://pyjok.es/)
+   - [**Check it here**](https://pyjok.es/)
  
 ### How will the assistant show Battery Percentage?
-   - [Check it here ](https://psutil.readthedocs.io/en/latest/)
+   - [**Check it here**](https://psutil.readthedocs.io/en/latest/)
 
 ### Prerequisite:
         ~ pip install plyer
