@@ -64,14 +64,14 @@
 
 ### Module needed:
 ```python 
-      import datetime`
-      from plyer import notification`
-      import requests`
-      import json`
-      import time `
-      from difflib import get_close_matches `
-      from datetime import date`
-      import wikipedia`
+      import datetime
+      from plyer import notification
+      import requests
+      import json
+      import time 
+      from difflib import get_close_matches 
+      from datetime import date
+      import wikipedia
       import smtplib
       import webbrowser
       import os
@@ -80,9 +80,18 @@
       import pyjokes
       import psutil`
 ```
-### Use of [**datetime**](https://cutt.ly/wbljsgV) module
-### Use of [**plyer**](https://cutt.ly/ubljolF) module
-
+### Modules uses: 
+   - [**datetime**](https://cutt.ly/wbljsgV) module
+   - [**plyer**](https://cutt.ly/ubljolF) module
+   - [**requests**](https://cutt.ly/cbljmUw) module
+   - [**json**](https://cutt.ly/KbljIH8) module
+   - [**time**](https://cutt.ly/zbljFZS) module
+   - [**get_close_matches**](https://cutt.ly/ebljX0J) module
+   - [**wikipedia**](https://cutt.ly/CbljMn2) module
+   - [**webbrowser**](https://cutt.ly/Vblj6nh) module
+   - [**os**](https://cutt.ly/OblkedC) module
+   - [**pyautogui**](https://cutt.ly/oblkui6) module
+   - [**random**](https://cutt.ly/eblkpUo) module
 
 _________________________________
 
