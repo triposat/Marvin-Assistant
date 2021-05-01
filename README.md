@@ -51,6 +51,6 @@ _________________________________
 
 <br/>
 <p align="center">
-<img src="https://badges.pufler.dev/updated/Iamtripathisatyam/Words_Dictionary?style=for-the-badge&logo=github&logoColor=yellow" alt=Iamtripathisatyam />
-<img src="https://badges.pufler.dev/created/Iamtripathisatyam/Words_Dictionary?style=for-the-badge&logo=github&logoColor=yellow" alt=Iamtripathisatyam />
+<img src="https://badges.pufler.dev/updated/Iamtripathisatyam/Mini_Assistant?style=for-the-badge&logo=github&logoColor=yellow" alt=Iamtripathisatyam />
+<img src="https://badges.pufler.dev/created/Iamtripathisatyam/Mini_Assistant?style=for-the-badge&logo=github&logoColor=yellow" alt=Iamtripathisatyam />
 </p>
