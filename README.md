@@ -22,10 +22,10 @@
 ### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://img.shields.io/badge/-MINI ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
   
 ### What can Assistant do?
-   - Wish you(Good Morning, Good Afternoon, and Good Evening) according to time
+   - At first, it will Wish you (Good Morning, Good Afternoon, and Good Evening) according to time
    - Search the Wikipedia of items
    - Searching the items on YouTube
-   - Tell you Time and Date
+   - Tell you Current Time and Date
    - Play Song
    - Open WhatsApp
    - Open LinkedIn
@@ -36,12 +36,12 @@
    - Write your Notes, Save them, and Show them
    - Take Screenshot 
    - Corona Situation World-Wide
-   - Daily News 
+   - Daily News Notifications
    - Search your Locations
-   - English Meaning of Anything 
+   - Search English Meaning of Anything 
    - Shutdown Computer
    - Restart Computer
-   - Thanking You
+   - At last it will Thank You 
 
 ### Prerequisite:
         ~ pip install plyer
