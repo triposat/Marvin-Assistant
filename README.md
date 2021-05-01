@@ -22,7 +22,6 @@
 ### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://img.shields.io/badge/-YOUR PERSONAL ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
 
 ### Prerequisite:
-```python
         ~ pip install plyer
         ~ pip install requests
         ~ pip install wikipedia
@@ -30,8 +29,7 @@
         ~ pip install PyAutoGUI
         ~ pip install pyjokes
         ~ pip install psutil
-        ~ .json file which I have provided in this Repository
-```             
+        ~ .json file which I have provided in this Repository             
 
 ### Module needed:
 ```python 
