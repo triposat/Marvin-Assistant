@@ -20,6 +20,8 @@
 
 
 ### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://img.shields.io/badge/-MINI ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
+  
+## What can Assistant do?
 
 ### Prerequisite:
         ~ pip install plyer
