@@ -81,7 +81,7 @@
       import psutil`
 ```
 ### Use of [**datetime**](https://cutt.ly/wbljsgV) module
-### Use of [**datetime**](https://cutt.ly/ubljolF) module
+### Use of [**plyer**](https://cutt.ly/ubljolF) module
 
 
 _________________________________
