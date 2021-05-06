@@ -1,7 +1,7 @@
 ![Size](https://img.shields.io/github/repo-size/Iamtripathisatyam/Mini_Assistant?color=red&label=Repo%20Size%20)</br>
-![License](https://img.shields.io/badge/License-MIT-red.svg)</br>
 [![Prettier](https://img.shields.io/badge/Code%20Style-Prettier-red.svg)](https://github.com/prettier/prettier)</br>
 ![](https://img.shields.io/tokei/lines/github/Iamtripathisatyam/Mini_Assistant?color=red&label=Lines%20of%20Code)</br>
+![License](https://img.shields.io/badge/License-MIT-red.svg)</br>
 
 <p align="center">
 <a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://icons.iconarchive.com/icons/artua/wall-e/128/eve-icon.png" /></a>
