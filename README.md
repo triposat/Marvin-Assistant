@@ -93,8 +93,6 @@
    - [**pyautogui**](https://cutt.ly/oblkui6) module
    - [**random**](https://cutt.ly/eblkpUo) module
 
-_________________________________
+___________________________________
 
-### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant">Made with <img src="https://cutt.ly/lbllkDi" width="20px"> in India</a><h3/>
-
-<p align="center">Copyright &copy; 2021 Satyam Tripathi</p>
+<p>&copy; 2021 Satyam Tripathi</p>
