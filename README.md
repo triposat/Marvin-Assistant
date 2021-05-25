@@ -27,7 +27,7 @@
    - **Open StackOverflow**
    - **Send Emails**
    - **Send chrome notification to your phone**
-   - **Show you the Battery % of your PC**
+   - **Show you the Battery% of your PC**
    - **Tell you Joke**
    - **Write your Notes, Save them, and Show them**
    - **Take Screenshot**
@@ -38,7 +38,7 @@
    - **Search English Meaning of any words**
    - **Shutdown Computer**
    - **Restart Computer**
-   - **At last it will Thank You**
+   - **At last, it will Thank You**
 
 ### Module need to install:
 ```python
@@ -49,6 +49,7 @@
     ~ pip install pyjokes
     ~ pip install psutil
     ~ pip install pywebio
+    ~ pip install pyspellchecker
     ~ .json file which I have provided in this Repository  
 ```
 
