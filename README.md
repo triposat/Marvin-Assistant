@@ -15,7 +15,7 @@
 ### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img src="https://img.shields.io/badge/-VIRTUAL ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
   
 ### What can Assistant do?
-   - **ish you (Good Morning, Good Afternoon, and Good Evening) according to time**
+   - **Wish you (Good Morning, Good Afternoon, and Good Evening) according to time**
    - **Search on Wikipedia**
    - **Search on YouTube**
    - **Search on Google**
@@ -40,38 +40,40 @@
    - **At last it will Thank You**
 
 ### Prerequisite:
-        ~ pip install requests
-        ~ pip install wikipedia
-        ~ pip install yagmail
-        ~ pip install PyAutoGUI
-        ~ pip install pyjokes
-        ~ pip install psutil
-        ~ pip install pywebio
-        ~ .json file which I have provided in this Repository             
+```python
+    ~ pip install requests
+    ~ pip install wikipedia
+    ~ pip install yagmail
+    ~ pip install PyAutoGUI
+    ~ pip install pyjokes
+    ~ pip install psutil
+    ~ pip install pywebio
+    ~ .json file which I have provided in this Repository  
+```
 
 ### Module needed:
 ```python 
-          import datetime
-          from sys import path
-          import requests
-          import speech_recognition as sr
-          import json
-          import time
-          from difflib import get_close_matches
-          from datetime import date
-          import wikipedia
-          import webbrowser
-          import os
-          import pyautogui
-          import random
-          import pyjokes
-          import psutil
-          import re
-          import yagmail
-          from pywebio.input import *
-          from pywebio.output import *
-          from pywebio.session import *
-          from spellchecker import SpellChecker
+      import datetime
+      from sys import path
+      import requests
+      import speech_recognition as sr
+      import json
+      import time
+      from difflib import get_close_matches
+      from datetime import date
+      import wikipedia
+      import webbrowser
+      import os
+      import pyautogui
+      import random
+      import pyjokes
+      import psutil
+      import re
+      import yagmail
+      from pywebio.input import *
+      from pywebio.output import *
+      from pywebio.session import *
+      from spellchecker import SpellChecker
 ```
 ### Modules uses: 
    - [**datetime**](https://cutt.ly/wbljsgV) module
