@@ -77,16 +77,18 @@
       from pywebio.session import *
       from spellchecker import SpellChecker
 ```
+### How to facilitate front-end?
+   -[Click here...](https://pywebio.readthedocs.io/en/latest/)
 
-### How?
+### How will Assistant perform operations?
    - Searching on Wikipedia
-       - [Click here!](https://stackabuse.com/getting-started-with-pythons-wikipedia-api/)
+       - [Click here...](https://stackabuse.com/getting-started-with-pythons-wikipedia-api/)
    - Searching on YouTube
-       - [Click here!](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
+       - [Click here...](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
    - Searching on Google
-       - [Click here!](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
+       - [Click here...](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
    - Sending Emails
-       - [Click here!](https://github.com/kootenpv/yagmail)
+       - [Click here...](https://github.com/kootenpv/yagmail)
 ___________________________________
 
 <p>&copy; 2021 Satyam Tripathi</p>
