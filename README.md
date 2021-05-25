@@ -5,7 +5,7 @@
 [![Prettier](https://img.shields.io/badge/Code%20Style-Prettier-red.svg)](https://github.com/prettier/prettier)
 ![](https://img.shields.io/tokei/lines/github/Iamtripathisatyam/Mini_Assistant?color=red&label=Lines%20of%20Code)
 ![License](https://img.shields.io/badge/License-MIT-red.svg)</br>
-![]((https://profile-counter.glitch.me/{Mini_Assistant}/count.svg))
+![](https://profile-counter.glitch.me/{Mini_Assistant}/count.svg)
 
 <p align="center">
 <a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img src="https://icons.iconarchive.com/icons/artua/wall-e/128/eve-icon.png" /></a>
@@ -77,6 +77,16 @@
       from pywebio.session import *
       from spellchecker import SpellChecker
 ```
+
+### How?
+   - Searching on Wikipedia
+       - [Click here!](https://stackabuse.com/getting-started-with-pythons-wikipedia-api/)
+   - Searching on YouTube
+       - [Click here!](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
+   - Searching on Google
+       - [Click here!](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
+   - Sending Emails
+       - [Click here!](https://github.com/kootenpv/yagmail)
 ___________________________________
 
 <p>&copy; 2021 Satyam Tripathi</p>
