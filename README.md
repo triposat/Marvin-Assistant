@@ -41,7 +41,7 @@
    - **Search Your Locations**
    - **Search English Meaning of any words**
    - **Shutdown Computer**
-   - **Restart Computer **
+   - **Restart Computer**
    - **At last it will Thank You**
 
 ### How will the assistant Send Email?
