@@ -89,6 +89,9 @@
        - [Click here...](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
    - Sending Emails
        - [Click here...](https://github.com/kootenpv/yagmail)
+     
+**Note:** Work is currently underway in this project, It will take atleast 20 days.
+  
 ___________________________________
 
 <p>&copy; 2021 Satyam Tripathi</p>
