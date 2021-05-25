@@ -26,6 +26,7 @@
    - **Open GitHub**
    - **Open StackOverflow**
    - **Send Emails**
+   - **Send chrome notification to your phone**
    - **Show you the Battery % of your PC**
    - **Tell you Joke**
    - **Write your Notes, Save them, and Show them**
@@ -39,7 +40,7 @@
    - **Restart Computer**
    - **At last it will Thank You**
 
-### Prerequisite:
+### Module need to install:
 ```python
     ~ pip install requests
     ~ pip install wikipedia
@@ -51,7 +52,7 @@
     ~ .json file which I have provided in this Repository  
 ```
 
-### Module needed:
+### Module need to import:
 ```python 
       import datetime
       from sys import path
@@ -75,19 +76,6 @@
       from pywebio.session import *
       from spellchecker import SpellChecker
 ```
-### Modules uses: 
-   - [**datetime**](https://cutt.ly/wbljsgV) module
-   - [**plyer**](https://cutt.ly/ubljolF) module
-   - [**requests**](https://cutt.ly/cbljmUw) module
-   - [**json**](https://cutt.ly/KbljIH8) module
-   - [**time**](https://cutt.ly/zbljFZS) module
-   - [**get_close_matches**](https://cutt.ly/ebljX0J) module
-   - [**wikipedia**](https://cutt.ly/CbljMn2) module
-   - [**webbrowser**](https://cutt.ly/Vblj6nh) module
-   - [**os**](https://cutt.ly/OblkedC) module
-   - [**pyautogui**](https://cutt.ly/oblkui6) module
-   - [**random**](https://cutt.ly/eblkpUo) module
-
 ___________________________________
 
 <p>&copy; 2021 Satyam Tripathi</p>
