@@ -1,25 +1,18 @@
-![Size](https://img.shields.io/github/repo-size/Iamtripathisatyam/Mini_Assistant?color=red&label=Repo%20Size%20)</br>
-[![Prettier](https://img.shields.io/badge/Code%20Style-Prettier-red.svg)](https://github.com/prettier/prettier)</br>
-![](https://img.shields.io/tokei/lines/github/Iamtripathisatyam/Mini_Assistant?color=red&label=Lines%20of%20Code)</br>
+![](https://forthebadge.com/images/badges/for-you.svg)
+![](http://ForTheBadge.com/images/badges/made-with-python.svg)
+![](https://forthebadge.com/images/badges/built-by-developers.svg)</br>
+![Size](https://img.shields.io/github/repo-size/Iamtripathisatyam/Mini_Assistant?color=red&label=Repo%20Size%20)
+[![Prettier](https://img.shields.io/badge/Code%20Style-Prettier-red.svg)](https://github.com/prettier/prettier)
+![](https://img.shields.io/tokei/lines/github/Iamtripathisatyam/Mini_Assistant?color=red&label=Lines%20of%20Code)
 ![License](https://img.shields.io/badge/License-MIT-red.svg)</br>
+![]((https://profile-counter.glitch.me/{Mini_Assistant}/count.svg))
 
 <p align="center">
-<a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://icons.iconarchive.com/icons/artua/wall-e/128/eve-icon.png" /></a>
-</p>
-
-<p align="center">
-<img src="https://forthebadge.com/images/badges/for-you.svg" />
-<img src="http://ForTheBadge.com/images/badges/made-with-python.svg" />
-<img src="https://forthebadge.com/images/badges/built-by-developers.svg" />
+<a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img src="https://icons.iconarchive.com/icons/artua/wall-e/128/eve-icon.png" /></a>
 </p>
 
 
-<p align="center">
-  <img src="https://profile-counter.glitch.me/{Mini_Assistant}/count.svg" alt=Iamtripathisatyam />
-</p>
-
-
-### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://img.shields.io/badge/-VIRTUAL ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
+### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img src="https://img.shields.io/badge/-VIRTUAL ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
   
 ### What can Assistant do?
    - **At first, it will Wish you (Good Morning, Good Afternoon, and Good Evening) according to time**
