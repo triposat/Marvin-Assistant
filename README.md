@@ -19,13 +19,14 @@
 </p>
 
 
-### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://img.shields.io/badge/-MINI ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
+### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Assistant/Mini%20Assistant.py"><img src="https://img.shields.io/badge/-VIRTUAL ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
   
 ### What can Assistant do?
    - **At first, it will Wish you (Good Morning, Good Afternoon, and Good Evening) according to time**
-   - **Search the Wikipedia of items**
-   - **Searching the items on YouTube**
-   - **Tell you Current Time and Date**
+   - **Open and Search on Wikipedia**
+   - **Open and Search on YouTube**
+   - **Open and Search on Google**
+   - **Time and Date**
    - **Play Song**
    - **Open WhatsApp**
    - **Open LinkedIn**
@@ -37,9 +38,9 @@
    - **Take Screenshot**
    - **Corona Situation World-Wide**
    - **Daily News Notifications**
-   - **Search your Locations**
-   - **Search English Meaning of Anything**
-   - **Shutdown Computer **
+   - **Search Your Locations**
+   - **Search English Meaning of any words**
+   - **Shutdown Computer**
    - **Restart Computer **
    - **At last it will Thank You**
 
