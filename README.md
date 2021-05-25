@@ -78,7 +78,7 @@
       from spellchecker import SpellChecker
 ```
 ### How to facilitate front-end?
-   -[Click here...](https://pywebio.readthedocs.io/en/latest/)
+   - [Click here...](https://pywebio.readthedocs.io/en/latest/)
 
 ### How will Assistant perform operations?
    - Searching on Wikipedia
