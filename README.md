@@ -90,7 +90,7 @@
    - Sending Emails
        - [Click here...](https://github.com/kootenpv/yagmail)
      
-**Note:** *Work is currently underway in this project, It will take atleast 20 days.*
+**Note:** *Work is currently underway in this project, It will take atleast 1 month.*
   
 ___________________________________
 
