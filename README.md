@@ -40,7 +40,7 @@
    - **Restart Computer**
    - **At last, it will Thank You**
 
-### Module need to install:
+### Modules need to install:
 ```python
     ~ pip install requests
     ~ pip install wikipedia
@@ -53,7 +53,7 @@
     ~ .json file which I have provided in this Repository  
 ```
 
-### Module need to import:
+### Modules need to import:
 ```python 
       import datetime
       from sys import path
