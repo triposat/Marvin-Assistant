@@ -25,8 +25,6 @@ yag = yagmail.SMTP("satyampsit244@gmail.com")
 
 regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
 
-Pattern = re.compile("(0/91)?[6-9][0-9]{9}")
-
 regex_1 = ("((http|https)://)(www.)?" +
            "[a-zA-Z0-9@:%._\\+~#?&//=]" +
            "{2,256}\\.[a-z]" +
