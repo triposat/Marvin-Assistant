@@ -36,10 +36,30 @@ regex_1 = ("((http|https)://)(www.)?" +
 Pattern_1 = re.compile(regex_1)
 
 
+def Bar():
+    put_html("<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
+    time.sleep(2)
+
+
+def progress():
+    put_html("<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
+    time.sleep(2)
+    clear()
+
+
+def progresses():
+    put_html("<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
+    time.sleep(3)
+
+
+def logo():
+    put_html("<p align=""left""><h4><img src=""https://icons.iconarchive.com/icons/icons8/windows-8/128/Business-Assistant-icon.png"" width=""28px"">  Desktop <del>VOICE</del> Assistant</h4></p>")
+
+
 def Spell(data):
     emails = re.findall(
-                r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", data)
-    if not emails: 
+        r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", data)
+    if not emails:
         words = data.split()
         misspelled = spell.unknown(words)
         if not misspelled:
@@ -111,24 +131,7 @@ def check_form(data):
         return None
 
 
-def progress():
-    put_html("<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
-    time.sleep(3)
-    clear()
-
-
-def progresses(Query):
-    put_processbar("Hello", label=f"Searching on {Query}", auto_close=True)
-    for i in range(1, 11):
-        set_processbar('Hello', i / 10, label=f"Searching on {Query}")
-        time.sleep(0.3)
-
-
-def logo():
-    put_html("<p align=""left""><h4><img src=""https://icons.iconarchive.com/icons/icons8/windows-8/128/Business-Assistant-icon.png"" width=""28px"">  Desktop <del>VOICE</del> Assistant</h4></p>")
-
-
-def main(some):
+def main(_):
     while 1:
         clear()
         logo()
@@ -136,63 +139,59 @@ def main(some):
                       required=True, validate=Spell)
         Query = Query.lower().strip()
         if ('wikipedia' in Query and "open" in Query) or 'wikipedia' in Query:
-            Query = Query.replace("wikipedia", "")
-            Que = Query
-            put_html(
-                "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
-            time.sleep(5)
+            Bar()
             clear()
             logo()
             put_html(
                 "<p align=""center""><img src=""https://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-Earth-icon.png"" width=""120px""></p>")
-            what = input(
+            Test_string = input(
                 placeholder="Wikipedia Search", required=True)
-            if "wikipedia" in what:
-                what = what.replace("wikipedia", "")
-            whats = what
+            if "wikipedia" in Test_string:
+                Test_string = Test_string.replace("wikipedia", "")
+            whats = Test_string
             try:
                 progress()
                 clear()
                 logo()
                 put_success("Almost done!")
                 Result = wikipedia.summary(
-                    what, sentences=2, auto_suggest=False, redirect=True)
+                    Test_string, sentences=2, auto_suggest=False, redirect=True)
                 time.sleep(3)
                 clear()
                 logo()
-                popup(f"{what.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
+                popup(f"{Test_string.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
                     ['Close'], onclick=lambda _: close_popup())], size=PopupSize.NORMAL)
             except:
-                what = wikipedia.suggest(what)
+                Test_string = wikipedia.suggest(Test_string)
                 try:
                     progress()
                     logo()
                     put_success("Almost done!")
                     Result = wikipedia.summary(
-                        what, sentences=2, auto_suggest=False, redirect=True)
+                        Test_string, sentences=2, auto_suggest=False, redirect=True)
                     time.sleep(2)
                     clear()
                     logo()
-                    popup(f"{what.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
+                    popup(f"{Test_string.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
                         ['Close'], onclick=lambda _: close_popup())], size=PopupSize.NORMAL)
                 except:
                     progress()
                     logo()
                     put_warning(
                         f"Aw, Snap!\nSomething went wrong while displaying result for \"{whats.strip()}\"")
-                    time.sleep(6)
+                    time.sleep(4)
         elif ('youtube' in Query and "open" in Query) or 'youtube' in Query:
             Query = Query.replace("youtube", "")
             Query = Query.lower().strip()
-            put_html(
-                "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
-            time.sleep(5)
+            Bar()
             clear()
             logo()
             put_html(
                 "<p align=""center""><img src=""https://icons.iconarchive.com/icons/dakirby309/simply-styled/256/YouTube-icon.png"" width=""120px""></p>")
-            what = input(
+            Test_string = input(
                 placeholder="YouTube Search", required=True)
+            if 'youtube' in Test_string.lower().strip():
+                Test_string = Test_string.replace("youtube", "")
             progress()
             clear()
             logo()
@@ -200,21 +199,21 @@ def main(some):
             time.sleep(3)
             clear()
             logo()
-            what = what.title().strip()
+            Test_string = Test_string.title().strip()
             webbrowser.open(
-                f"https://www.youtube.com/results?search_query={what}")
+                f"https://www.youtube.com/results?search_query={Test_string}")
         elif ('google' in Query and "open" in Query) or 'google' in Query:
             Query = Query.replace("google", "")
             Query = Query.lower().strip()
-            put_html(
-                "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
-            time.sleep(5)
+            Bar()
             clear()
             logo()
             put_html(
                 "<p align=""center""><img src=""https://media.tenor.com/images/c130571f5e239c834e52f75d4d06d4d8/tenor.gif"" width=""120px""></p>")
-            what = input(
+            Test_string = input(
                 placeholder="Google Search", required=True)
+            if 'google' in Test_string.lower().strip():
+                Test_string = Test_string.replace("google", "")
             progress()
             clear()
             logo()
@@ -222,9 +221,12 @@ def main(some):
             time.sleep(3)
             clear()
             logo()
-            what = what.title().strip()
-            webbrowser.open(f"https://www.google.com/search?q={what}")
+            Test_string = Test_string.title().strip()
+            webbrowser.open(f"https://www.google.com/search?q={Test_string}")
         elif Query == "send email" or Query == "send mail" or Query == "sendemail" or Query == "mail" or Query == "email" or Query == "gmail" or Query == "send gmail" or Query == 'sendgmail':
+            Bar()
+            clear()
+            logo()
             put_html(
                 "<p align=""center""><img src=""https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Communication-gmail-icon.png"" width=""120px""></p>")
             data = input_group("New Message", [input('', name='To', type=TEXT, required=True, PlaceHolder="Recipients"), input(
@@ -237,21 +239,20 @@ def main(some):
                 html = f'<a href={Link}>Click here!</a>'
                 file = data['path']
                 content = [body, file, html]
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
-                time.sleep(3)
+                progresses()
                 yag.send(f'{to}', f'{subject}', content)
             else:
                 content = [body]
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
-                time.sleep(3)
+                progresses()
                 yag.send(f'{to}', f'{subject}', content)
             clear()
             logo()
             put_success("Message sent successfully")
             time.sleep(3)
         elif "send mail to " in Query or "mail to" in Query or "email to" in Query or "gmail to" in Query or "send email to" in Query or "send gmail to" in Query:
+            Bar()
+            clear()
+            logo()
             put_html(
                 "<p align=""center""><img src=""https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Communication-gmail-icon.png"" width=""120px""></p>")
             emails = re.findall(
@@ -271,21 +272,20 @@ def main(some):
                     html = f'<a href={Link}>Click here!</a>'
                     file = data['path']
                     content = [body, file, html]
-                    put_html(
-                        "<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
-                    time.sleep(3)
+                    progresses()
                     yag.send(f'{to}', f'{subject}', content)
                 else:
                     content = [body]
-                    put_html(
-                        "<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
-                    time.sleep(3)
+                    progresses()
                     yag.send(f'{to}', f'{subject}', content)
                 clear()
                 logo()
                 put_success("Message sent successfully")
                 time.sleep(3)
         elif "send mail" in Query or "send email" in Query or "send gmail" in Query or "email" in Query or "gmail" in Query or "mail" in Query:
+            Bar()
+            clear()
+            logo()
             put_html(
                 "<p align=""center""><img src=""https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Communication-gmail-icon.png"" width=""120px""></p>")
             data = input_group("New Message", [input('', name='To', type=TEXT, required=True, PlaceHolder="Recipients"), input(
@@ -298,16 +298,12 @@ def main(some):
                 html = f'<a href={Link}>Click here!</a>'
                 file = data['path']
                 content = [body, file, html]
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
-                time.sleep(3)
                 yag.send(f'{to}', f'{subject}', content)
             else:
                 content = [body]
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/6399c69d68f8e6351e599e0db88f665e/tenor.gif"" width=""120px""></p>")
-                time.sleep(3)
+                progresses()
                 yag.send(f'{to}', f'{subject}', content)
+                progresses()
             clear()
             logo()
             put_success("Message sent successfully")
@@ -318,18 +314,18 @@ def wishme():
     hour = int(datetime.datetime.now().hour)
     if hour >= 5 and hour < 12:
         toast('Good Morning!', position='center',
-              color='#469F70', duration=4, onclick=clear)
+              color='#469F70', duration=3, onclick=clear)
     elif hour >= 12 and hour < 17:
         toast('Good Afternoon!', position='center',
-              color='#469F70', duration=4, onclick=clear)
+              color='#469F70', duration=3, onclick=clear)
     else:
         toast('Good Evening!', position='center',
-              color='#469F70', duration=4, onclick=clear)
+              color='#469F70', duration=3, onclick=clear)
 
 
 if __name__ == '__main__':
     wishme()
-    time.sleep(4)
+    time.sleep(3)
     put_html("<p align=""center""><h1><img src=""https://icons.iconarchive.com/icons/icons8/windows-8/128/Business-Assistant-icon.png"">  Desktop <del>VOICE</del> Assistant</h1></p>")
     put_html("<h3>What can Assistant do?</h3>")
     put_html("<p><img src=""https://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-Earth-icon.png"" width=""32px""> WikiPedia &emsp;&emsp;&nbsp;&emsp;&nbsp; <img src=""https://icons.iconarchive.com/icons/dtafalonso/android-l/256/Youtube-icon.png"" width=""32px""> YouTube &emsp;&emsp;&emsp;&nbsp; <img src=""https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/google-icon.png"" width=""32px""> Google &emsp;&emsp;&emsp; <img src=""https://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Gmail-icon.png"" width=""32px""> Send Email &emsp;&emsp;&emsp;&nbsp; <img src=""https://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Stackoverflow-icon.png"" width=""30px""> Open StackOverflow</p>")
