@@ -80,8 +80,8 @@
    - [Click here](https://pywebio.readthedocs.io/en/latest/)
 
 ### How will Assistant perform operations?
-   - [Searching on Wikipedia]((https://stackabuse.com/getting-started-with-pythons-wikipedia-api/))
-   - [Searching on YouTube]((https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/))
+   - [Searching on Wikipedia](https://stackabuse.com/getting-started-with-pythons-wikipedia-api/)
+   - [Searching on YouTube](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
    - [Searching on Google](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
    - [Sending Emails](https://github.com/kootenpv/yagmail)
      
