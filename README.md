@@ -21,10 +21,10 @@
    - **Search on Google**
    - **Time and Date**
    - **Play music**
-   - **Open whatsApp**
-   - **Open linkedIn**
-   - **Open gitHub**
-   - **Open stackOverflow**
+   - **Open WhatsApp**
+   - **Open LinkedIn**
+   - **Open GitHub**
+   - **Open StackOverflow**
    - **Send emails**
    - **Send chrome notification to your phone**
    - **Show you the battery% of your PC**
@@ -34,11 +34,11 @@
    - **Click photo**
    - **Covid-19 situation world-wide**
    - **Daily news notifications**
-   - **Search Your Location**
+   - **Search your Location**
    - **Search english meaning of any word**
    - **Shutdown PC**
    - **Restart PC**
-   - **At last, it will Thank You**
+   - **At last, it will thank you**
 
 ### Modules need to install:
 ```python
@@ -76,8 +76,7 @@
       from pywebio.session import *
       from spellchecker import SpellChecker
 ```
-### How to facilitate front-end?
-   - [Click here](https://pywebio.readthedocs.io/en/latest/)
+### [How to facilitate front-end?]((https://pywebio.readthedocs.io/en/latest/))
 
 ### How will Assistant perform operations?
    - [Searching on Wikipedia](https://stackabuse.com/getting-started-with-pythons-wikipedia-api/)
