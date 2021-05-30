@@ -20,7 +20,7 @@
    - **Search on YouTube**
    - **Search on Google**
    - **Time and Date**
-   - **Play Musics**
+   - **Play Music**
    - **Open WhatsApp**
    - **Open LinkedIn**
    - **Open GitHub**
