@@ -1,5 +1,4 @@
 import datetime
-from sys import path
 import requests
 import speech_recognition as sr
 import json
@@ -35,6 +34,24 @@ regex_1 = ("((http|https)://)(www.)?" +
            "._\\+~#?&//=]*)")
 
 Pattern_1 = re.compile(regex_1)
+
+
+def Spell(data):
+    emails = re.findall(
+                r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", data)
+    if not emails: 
+        words = data.split()
+        misspelled = spell.unknown(words)
+        if not misspelled:
+            return None
+        else:
+            spel = [word for word in misspelled]
+            if len(spel) > 1:
+                spel = ", ".join(spel)
+                return f"couldn't recognize words \"{spel}\""
+            else:
+                spel = ", ".join(spel)
+                return f"couldn't recognize word \"{spel}\""
 
 
 def check_for(data):
@@ -111,196 +128,102 @@ def logo():
     put_html("<p align=""left""><h4><img src=""https://icons.iconarchive.com/icons/icons8/windows-8/128/Business-Assistant-icon.png"" width=""28px"">  Desktop <del>VOICE</del> Assistant</h4></p>")
 
 
-def Mac(hey):
+def main(some):
     while 1:
         clear()
         logo()
         Query = input(placeholder="Try Searching something...",
-                      required=True)
+                      required=True, validate=Spell)
         Query = Query.lower().strip()
-        if 'wikipedia' in Query:
+        if ('wikipedia' in Query and "open" in Query) or 'wikipedia' in Query:
             Query = Query.replace("wikipedia", "")
             Que = Query
-            if not Query:
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
-                time.sleep(5)
+            put_html(
+                "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
+            time.sleep(5)
+            clear()
+            logo()
+            put_html(
+                "<p align=""center""><img src=""https://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-Earth-icon.png"" width=""120px""></p>")
+            what = input(
+                placeholder="Wikipedia Search", required=True)
+            if "wikipedia" in what:
+                what = what.replace("wikipedia", "")
+            whats = what
+            try:
+                progress()
                 clear()
                 logo()
-                put_html(
-                    "<p align=""center""><img src=""http://assets.stickpng.com/thumbs/584829e7cef1014c0b5e4a08.png"" width=""120px""></p>")
-                what = input(
-                    placeholder="Wikipedia Search", required=True)
-                if "wikipedia" in what:
-                    what = what.replace("wikipedia", "")
-                whats = what
+                put_success("Almost done!")
+                Result = wikipedia.summary(
+                    what, sentences=2, auto_suggest=False, redirect=True)
+                time.sleep(3)
+                clear()
+                logo()
+                popup(f"{what.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
+                    ['Close'], onclick=lambda _: close_popup())], size=PopupSize.NORMAL)
+            except:
+                what = wikipedia.suggest(what)
                 try:
-                    Result = wikipedia.summary(
-                        what, sentences=2, auto_suggest=False, redirect=True)
                     progress()
-                    clear()
                     logo()
                     put_success("Almost done!")
-                    time.sleep(3)
+                    Result = wikipedia.summary(
+                        what, sentences=2, auto_suggest=False, redirect=True)
+                    time.sleep(2)
                     clear()
                     logo()
                     popup(f"{what.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
                         ['Close'], onclick=lambda _: close_popup())], size=PopupSize.NORMAL)
                 except:
-                    what = wikipedia.suggest(what)
-                    try:
-                        Result = wikipedia.summary(
-                            what, sentences=2, auto_suggest=False, redirect=True)
-                        progress()
-                        logo()
-                        put_success("Almost done!")
-                        time.sleep(2)
-                        clear()
-                        logo()
-                        popup(f"{what.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
-                            ['Close'], onclick=lambda _: close_popup())], size=PopupSize.NORMAL)
-                    except:
-                        progress()
-                        logo()
-                        put_warning(
-                            f"Aw, Snap!\nSomething went wrong while displaying result for \"{whats.strip()}\"")
-                        time.sleep(6)
-            else:
-                Query = Query.replace("wikipedia", "")
-                Que = Query
-                try:
-                    Result = wikipedia.summary(
-                        Query, sentences=2, auto_suggest=False, redirect=True)
                     progress()
                     logo()
-                    put_success("Almost done!")
-                    time.sleep(2)
-                    clear()
-                    logo()
-                    popup(f"{Query.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
-                        ['Close'], onclick=lambda _: close_popup())], size=PopupSize.NORMAL)
-                except:
-                    Query = wikipedia.suggest(Query)
-                    progress()
-                    try:
-                        Result = wikipedia.summary(
-                            Query, sentences=2, auto_suggest=False, redirect=True)
-                        put_success("Almost done!")
-                        time.sleep(2)
-                        clear()
-                        logo()
-                        popup(f"{Query.title()} Wikipedia", [put_html("<ol>"f"{Result}""</ol>"), put_buttons(
-                            ['Close'], onclick=lambda _: close_popup())], size=PopupSize.NORMAL)
-                    except:
-                        clear()
-                        logo()
-                        put_warning(
-                            f"Aw, Snap!\nSomething went wrong while displaying result for \"{Que.strip()}\"")
-                        time.sleep(6)
-        elif 'youtube' in Query or "open" in Query:
+                    put_warning(
+                        f"Aw, Snap!\nSomething went wrong while displaying result for \"{whats.strip()}\"")
+                    time.sleep(6)
+        elif ('youtube' in Query and "open" in Query) or 'youtube' in Query:
             Query = Query.replace("youtube", "")
             Query = Query.lower().strip()
-            if not Query:
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
-                time.sleep(5)
-                clear()
-                logo()
-                put_html(
-                    "<p align=""center""><img src=""https://icons.iconarchive.com/icons/dakirby309/simply-styled/256/YouTube-icon.png"" width=""120px""></p>")
-                what = input(
-                    placeholder="YouTube Search", required=True)
-                progress()
-                clear()
-                logo()
-                put_success("Almost done!")
-                time.sleep(3)
-                clear()
-                logo()
-                what = what.title().strip()
-                webbrowser.open(
-                    f"https://www.youtube.com/results?search_query={what}")
-            else:
-                if "search" in Query:
-                    Query = Query.replace("search", "").strip()
-                if "on" in Query:
-                    Query = Query.replace("on", "").strip()
-                if "please" in Query:
-                    Query = Query.replace("please", "").strip()
-                if "for" in Query:
-                    Query = Query.replace("for", "").strip()
-                if "in" in Query:
-                    Query = Query.replace("in", "").strip()
-                if "open" in Query:
-                    Query = Query.replace("open", "").strip()
-                if "the" in Query:
-                    Query = Query.replace("the", "").strip()
-                if "want" in Query:
-                    Query = Query.replace("want", "").strip()
-                if "to" in Query:
-                    Query = Query.replace("to", "").strip()
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
-                time.sleep(5)
-                clear()
-                logo()
-                put_success("Almost done!")
-                time.sleep(3)
-                clear()
-                logo()
-                webbrowser.open(
-                    f"https://www.youtube.com/results?search_query={Query}")
-        elif 'google' in Query:
+            put_html(
+                "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
+            time.sleep(5)
+            clear()
+            logo()
+            put_html(
+                "<p align=""center""><img src=""https://icons.iconarchive.com/icons/dakirby309/simply-styled/256/YouTube-icon.png"" width=""120px""></p>")
+            what = input(
+                placeholder="YouTube Search", required=True)
+            progress()
+            clear()
+            logo()
+            put_success("Almost done!")
+            time.sleep(3)
+            clear()
+            logo()
+            what = what.title().strip()
+            webbrowser.open(
+                f"https://www.youtube.com/results?search_query={what}")
+        elif ('google' in Query and "open" in Query) or 'google' in Query:
             Query = Query.replace("google", "")
             Query = Query.lower().strip()
-            if not Query or "open" in Query:
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
-                time.sleep(5)
-                clear()
-                logo()
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/c130571f5e239c834e52f75d4d06d4d8/tenor.gif"" width=""120px""></p>")
-                what = input(
-                    placeholder="Google Search", required=True)
-                progress()
-                clear()
-                logo()
-                put_success("Almost done!")
-                time.sleep(3)
-                clear()
-                logo()
-                what = what.title().strip()
-                webbrowser.open(f"https://www.google.com/search?q={what}")
-            else:
-                if "search" in Query:
-                    Query = Query.replace("search", "").strip()
-                if "on" in Query:
-                    Query = Query.replace("on", "").strip()
-                if "please" in Query:
-                    Query = Query.replace("please", "").strip()
-                if "for" in Query:
-                    Query = Query.replace("for", "").strip()
-                if "in" in Query:
-                    Query = Query.replace("in", "").strip()
-                if "open" in Query:
-                    Query = Query.replace("open", "").strip()
-                if "the" in Query:
-                    Query = Query.replace("the", "").strip()
-                if "want" in Query:
-                    Query = Query.replace("want", "").strip()
-                if "to" in Query:
-                    Query = Query.replace("to", "").strip()
-                put_html(
-                    "<p align=""center""><img src=""https://media.tenor.com/images/07f963d385c2d7f7567f1a4b806e91c6/tenor.gif"" width=""140px""></p>")
-                time.sleep(5)
-                clear()
-                logo()
-                put_success("Almost done!")
-                time.sleep(3)
-                clear()
-                logo()
-                webbrowser.open(f"https://www.google.com/search?q={Query}")
+            put_html(
+                "<p align=""center""><img src=""https://media.tenor.com/images/0d34378f630afe43f7ed93f8341d7d77/tenor.gif"" width=""120px""></p>")
+            time.sleep(5)
+            clear()
+            logo()
+            put_html(
+                "<p align=""center""><img src=""https://media.tenor.com/images/c130571f5e239c834e52f75d4d06d4d8/tenor.gif"" width=""120px""></p>")
+            what = input(
+                placeholder="Google Search", required=True)
+            progress()
+            clear()
+            logo()
+            put_success("Almost done!")
+            time.sleep(3)
+            clear()
+            logo()
+            what = what.title().strip()
+            webbrowser.open(f"https://www.google.com/search?q={what}")
         elif Query == "send email" or Query == "send mail" or Query == "sendemail" or Query == "mail" or Query == "email" or Query == "gmail" or Query == "send gmail" or Query == 'sendgmail':
             put_html(
                 "<p align=""center""><img src=""https://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Communication-gmail-icon.png"" width=""120px""></p>")
@@ -415,6 +338,6 @@ if __name__ == '__main__':
     put_html("<p><img src=""https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/Downloads-icon.png"" width=""32px""> Download Video &nbsp;&ensp; <img src=""https://icons.iconarchive.com/icons/custom-icon-design/flatastic-11/256/Cloud-icon.png"" width=""32px""> WordCloud &emsp;&ensp;&nbsp; <img src=""https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Emotes-face-smile-icon.png"" width=""32px""> Jokes &nbsp;&ensp;&emsp;&emsp;&emsp; <img src=""https://icons.iconarchive.com/icons/icons8/windows-8/256/Computer-Hardware-Restart-icon.png"" width=""30px""> reSTART &emsp;&nbsp;&ensp;&emsp;&emsp;&ensp;&nbsp; <img src=""https://icons.iconarchive.com/icons/itzikgur/my-seven/256/Recycle-Bin-full-icon.png"" width=""32px""> Empty Recycle Bin</p>")
     put_html("<p><img src=""https://icons.iconarchive.com/icons/dapino/summer-holiday/256/camera-icon.png"" width=""32px""> Take a Photo &ensp;&emsp;&emsp; <img src=""https://icons.iconarchive.com/icons/inipagi/job-seeker/256/notes-icon.png"" width=""32px""> Show Notes &nbsp;&nbsp;&ensp;&ensp; <img src=""https://icons.iconarchive.com/icons/paomedia/small-n-flat/256/lock-icon.png"" width=""30px""> Lock Window &nbsp; <img src=""https://icons.iconarchive.com/icons/paomedia/small-n-flat/256/map-marker-icon.png"" width=""32px""> Search Locations &ensp;&ensp; <img src=""https://icons.iconarchive.com/icons/wwalczyszyn/android-style-honeycomb/256/Talk-icon.png"" width=""32px""> Personal Talk</p><br>")
     put_buttons(
-        [dict(label='Next', value='outline-success', color='outline-success')], onclick=Mac)
+        [dict(label='Next', value='outline-success', color='outline-success')], onclick=main)
     put_html("<hr><h4 align=""left"">&copy; Satyam Tripathi</h4>")
 hold()
