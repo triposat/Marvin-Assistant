@@ -56,7 +56,6 @@
 ### Modules need to import:
 ```python 
       import datetime
-      from sys import path
       import requests
       import speech_recognition as sr
       import json
