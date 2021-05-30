@@ -20,24 +20,24 @@
    - **Search on YouTube**
    - **Search on Google**
    - **Time and Date**
-   - **Play Music**
-   - **Open WhatsApp**
-   - **Open LinkedIn**
-   - **Open GitHub**
-   - **Open StackOverflow**
-   - **Send Emails**
+   - **Play music**
+   - **Open whatsApp**
+   - **Open linkedIn**
+   - **Open gitHub**
+   - **Open stackOverflow**
+   - **Send emails**
    - **Send chrome notification to your phone**
-   - **Show you the Battery% of your PC**
-   - **Tell you Joke**
-   - **Write your Notes, Save them, and Show them**
-   - **Take Screenshot**
-   - **Take photo**
-   - **Corona Situation World-Wide**
-   - **Daily News Notifications**
-   - **Search Your Locations**
-   - **Search English Meaning of any words**
-   - **Shutdown Computer**
-   - **Restart Computer**
+   - **Show you the battery% of your PC**
+   - **Tell a Joke**
+   - **Write your notes, save them, and display them**
+   - **Take screenshot**
+   - **Click photo**
+   - **Covid-19 situation world-wide**
+   - **Daily news notifications**
+   - **Search Your Location**
+   - **Search english meaning of any word**
+   - **Shutdown PC**
+   - **Restart PC**
    - **At last, it will Thank You**
 
 ### Modules need to install:
