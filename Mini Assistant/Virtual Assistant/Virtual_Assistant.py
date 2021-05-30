@@ -1,5 +1,5 @@
 import datetime
-import requests
+import requests  #requests module allows you to send http requests
 import speech_recognition as sr
 import json
 import time
