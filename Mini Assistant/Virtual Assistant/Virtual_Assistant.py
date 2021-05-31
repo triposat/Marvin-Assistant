@@ -1,19 +1,19 @@
 import datetime
-import requests #requests module allows you to send http requests
+import requests # Requests module allows you to send https requests
 import speech_recognition as sr  
 import json
 import time
-from difflib import get_close_matches #difflib module contains easy functions and classes that allows users to compare sets of data
+from difflib import get_close_matches # difflib module contains easy functions and classes that allows users to compare sets of data
 from datetime import date  
 import wikipedia  
-import webbrowser #webbrowser module provides a high-level interface which allows displaying Web-based documents to users
-import os #os module provides a convenient way to use the operating system functions
-import pyautogui #pyautogui module automate your GUI and programmatically control your keyboard and mouse
+import webbrowser # webbrowser module provides a high-level interface which allows displaying Web-based documents to users
+import os # os module provides a convenient way to use the operating system functions
+import pyautogui # pyautogui module automate your GUI and programmatically control your keyboard and mouse
 import random 
 import pyjokes
-import psutil #psutil module retrieve the information about running processes and system utilization (CPU, memory, disks, network, sensors)
+import psutil # psutil module retrieve the information about running processes and system utilization (CPU, memory, disks, network, sensors)
 import re
-import yagmail #yagmail module simplifies the task of using the web browser or mail application in order to send emails
+import yagmail # yagmail module simplifies the task of using the web browser or mail application in order to send emails
 from pywebio.input import *
 from pywebio.output import *
 from pywebio.session import *
@@ -25,7 +25,7 @@ yag = yagmail.SMTP("satyampsit244@gmail.com")
 
 regex = '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$'
 
-regex_1 = ("((http|https)://)(www.)?" +       # this expression is used to check that the link address is there 
+regex_1 = ("((http|https)://)(www.)?" +       # This expression is used to check that the link address is there 
            "[a-zA-Z0-9@:%._\\+~#?&//=]" +
            "{2,256}\\.[a-z]" +
            "{2,6}\\b([-a-zA-Z0-9@:%" +
@@ -56,16 +56,16 @@ def logo():
 
 def Spell(data):
     emails = re.findall(
-        r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", data)  # this findall function provide all the email addresses i.e stored in data  
-    if not emails:      # if there is no email inside the data then it will spell the data 
+        r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", data)  # This findall function provide all the email addresses i.e stored in data  
+    if not emails:      # If there is no email inside the data then it will spell the data 
         words = data.split()
-        misspelled = spell.unknown(words) # find the words having wrongly spelled(written) by the user
+        misspelled = spell.unknown(words) # Find the words having wrongly spelled(written) by the user
         if not misspelled:
             return None
         else:
             spel = [word for word in misspelled]
             if len(spel) > 1:
-                spel = ", ".join(spel) # joining all the misspelled or wrong words by ','
+                spel = ", ".join(spel) # Joining all the misspelled or wrong words by ','
                 return f"couldn't recognize words \"{spel}\""
             else:
                 spel = ", ".join(spel)
