@@ -10,9 +10,6 @@
 <p align="center">
 <a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img src="https://icons.iconarchive.com/icons/artua/wall-e/128/eve-icon.png" /></a>
 </p>
-
-
-### <h3 align="center"><a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img src="https://img.shields.io/badge/-VIRTUAL ASSISTANT-black?logo=python&logoColor=yellow&style=flat-square"></a><h3/>
   
 ### What can Assistant do?
    - **Wish you (Good Morning, Good Afternoon, and Good Evening) according to time**
