@@ -85,7 +85,7 @@
    - [Searching on Google](https://www.geeksforgeeks.org/python-launch-a-web-browser-using-webbrowser-module/)
    - [Sending Emails](https://github.com/kootenpv/yagmail)
      
-**Note:** *Work is currently underway in this project, It will take atleast 1 month.*
+*Note:* *Work is currently underway in this project, It will take atleast 1 month.*
   
 ___________________________________
 
