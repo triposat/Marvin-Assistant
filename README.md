@@ -27,7 +27,7 @@
    - **Open StackOverflow**
    - **Send emails**
    - **Send chrome notification to your phone**
-   - **Show you the battery% of your PC**
+   - **Show you the battery % of your PC**
    - **Tell a Joke**
    - **Write your notes, save them, and display them**
    - **Take screenshot**
