@@ -1,4 +1,3 @@
-![](https://forthebadge.com/images/badges/for-you.svg)
 ![](http://ForTheBadge.com/images/badges/made-with-python.svg)
 ![](https://forthebadge.com/images/badges/built-by-developers.svg)</br>
 ![Size](https://img.shields.io/github/repo-size/Iamtripathisatyam/Mini_Assistant?color=red&label=Repo%20Size%20)
