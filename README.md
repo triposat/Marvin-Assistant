@@ -36,7 +36,7 @@
    - **Restart PC**
    - **At last, it will thank you**
 
-### Modules need to install:
+### Install the modules:
 ```python
     ~ pip install requests
     ~ pip install wikipedia
@@ -49,7 +49,7 @@
     ~ .json file which I have provided in this Repository  
 ```
 
-### Modules need to import:
+### Import the modules:
 ```python 
       import datetime
       import requests
