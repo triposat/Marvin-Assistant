@@ -7,7 +7,7 @@
 ![](https://profile-counter.glitch.me/{Mini_Assistant}/count.svg)
 
 <p align="center">
-<a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img src="https://icons.iconarchive.com/icons/artua/wall-e/128/eve-icon.png" /></a>
+<a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img width="85%" src="https://user-images.githubusercontent.com/69134468/127773561-3c15f017-a31f-4302-b077-73b60a1905ee.png" /></a>
 </p>
   
 ### What can Assistant do?
