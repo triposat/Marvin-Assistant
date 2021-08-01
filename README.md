@@ -38,39 +38,39 @@
 
 ### Install the modules:
 ```python
-    ~ pip install requests
-    ~ pip install wikipedia
-    ~ pip install yagmail
-    ~ pip install PyAutoGUI
-    ~ pip install pyjokes
-    ~ pip install psutil
-    ~ pip install pywebio
-    ~ pip install pyspellchecker
-    ~ .json file which I have provided in this Repository  
+~ pip install requests
+~ pip install wikipedia
+~ pip install yagmail
+~ pip install PyAutoGUI
+~ pip install pyjokes
+~ pip install psutil
+~ pip install pywebio
+~ pip install pyspellchecker
+~ .json file which I have provided in this Repository  
 ```
 
 ### Import the modules:
 ```python 
-      import datetime
-      import requests
-      import speech_recognition as sr
-      import json
-      import time
-      from difflib import get_close_matches
-      from datetime import date
-      import wikipedia
-      import webbrowser
-      import os
-      import pyautogui
-      import random
-      import pyjokes
-      import psutil
-      import re
-      import yagmail
-      from pywebio.input import *
-      from pywebio.output import *
-      from pywebio.session import *
-      from spellchecker import SpellChecker
+  import datetime
+  import requests
+  import speech_recognition as sr
+  import json
+  import time
+  from difflib import get_close_matches
+  from datetime import date
+  import wikipedia
+  import webbrowser
+  import os
+  import pyautogui
+  import random
+  import pyjokes
+  import psutil
+  import re
+  import yagmail
+  from pywebio.input import *
+  from pywebio.output import *
+  from pywebio.session import *
+  from spellchecker import SpellChecker
 ```
 
 - [How to facilitate front-end?](https://pywebio.readthedocs.io/en/latest/)
