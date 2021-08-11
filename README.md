@@ -7,7 +7,7 @@
 ![](https://profile-counter.glitch.me/{Mini_Assistant}/count.svg)
 
 <p align="center">
-<a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img width="85%" src="https://user-images.githubusercontent.com/69134468/127773561-3c15f017-a31f-4302-b077-73b60a1905ee.png" /></a>
+<a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img width="20%" src="https://user-images.githubusercontent.com/69134468/128800245-60875112-29c5-4801-8023-e9d84a834b24.png" /></a>
 </p>
 
 - [Introduction](#Intro)
@@ -33,6 +33,7 @@
   - [reSTART](#restart)
   - [Take a Photo](#photo)
   - [Empty Recycle Bin](#bin)
+- [Output](#out)
 - [Conclusion](#conc)
 
 ## Introduction:<a name="Intro"></a>
@@ -342,6 +343,8 @@ If you enter spelling that does not exist, it will display an error message, and
       ```python
       winshell.recycle_bin().empty(confirm=False, show_progress=False, sound=False)
       ```
+## Output: <a name="out"></a>
+<p align="center"><img width="80%" src="https://user-images.githubusercontent.com/69134468/128981899-4cc19a45-1919-40bf-bcda-49d39c2c2b05.PNG"></p>
 
 ## Conclusion: <a name="conc"></a>
 This is how easy it is to create your own desktop assistant. You may add many more functionalities, such as sending messages in Slack, providing data on Covid-19 cases, and so forth. Have fun experimenting with and creating your own Alexa/Siri/Cortana.
