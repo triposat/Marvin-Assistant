@@ -48,13 +48,13 @@ commands = re.compile("|".join(command_list), re.IGNORECASE)
 Pattern_1 = re.compile(regex_1)
 
 # For extracting the current weather data
-api_key = "88d279a5ff5fcd8e338ab42d94c819c3"
+api_key = "Your API Key"
 
 # URL for the weaher data
 base_url = "https://api.openweathermap.org/data/2.5/weather?"
 
 # API key for sending push notification to the phone
-access_token = "o.aJXLlYcxqUAyvZZLzGDdUQYWxwDNbhYw"
+access_token = "Your Access Token"
 
 # JSON file for finding the meanings of the word
 book = json.load(open(r"C:\Users\Dell\Desktop\ebooks.json"))
