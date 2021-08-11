@@ -7,7 +7,7 @@
 ![](https://profile-counter.glitch.me/{Mini_Assistant}/count.svg)
 
 <p align="center">
-<a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Mini%20Assistant/Virtual%20Assistant/Virtual_Assistant.py"><img width="20%" src="https://user-images.githubusercontent.com/69134468/128800245-60875112-29c5-4801-8023-e9d84a834b24.png" /></a>
+<a href="https://github.com/Iamtripathisatyam/Mini_Assistant/blob/main/Content/code.py"><img width="20%" src="https://user-images.githubusercontent.com/69134468/128800245-60875112-29c5-4801-8023-e9d84a834b24.png" /></a>
 </p>
 
 - [Introduction](#Intro)
