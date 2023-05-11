@@ -49,11 +49,11 @@ If you type something wrong or that **doesn't exist**, it shows an error message
 
 Here's how it works:
 
-The code calculates the current hour using "datetime.datetime.now().hour".
-Then, it uses if-else loops to figure out the best greeting for that time.
-If the hour is between 5 AM and 12 PM, it says "Good Morning".
-If the hour is between 12 PM and 5 PM, it says "Good Afternoon".
-Otherwise, it says "Good Evening".
+- The code calculates the current hour using "datetime.datetime.now().hour".
+- Then, it uses if-else loops to figure out the best greeting for that time.
+- If the hour is between 5 AM and 12 PM, it says "Good Morning".
+- If the hour is between 12 PM and 5 PM, it says "Good Afternoon".
+- Otherwise, it says "Good Evening".
 
   - Using the below code, it will first calculate an hour.
     
@@ -74,10 +74,10 @@ Otherwise, it says "Good Evening".
 - ### Search on Wikipedia:<a name="wiki"></a>
   - Here's how it works:
 
-First, it asks the user to enter something they want to search for on Wikipedia.
-Using the Wikipedia module, it checks if the input exists on Wikipedia.
-If it does, it tries to get a summary of the topic using relevant keywords.
-If the input is not found on Wikipedia, it suggests some alternative keywords to search for.
+- First, it asks the user to enter something they want to search for on Wikipedia.
+- Using the Wikipedia module, it checks if the input exists on Wikipedia.
+- If it does, it tries to get a summary of the topic using relevant keywords.
+- If the input is not found on Wikipedia, it suggests some alternative keywords to search for.
 
     ```python
     Test_string = input(placeholder="Wikipedia Search", required=True)
@@ -113,9 +113,9 @@ If the input is not found on Wikipedia, it suggests some alternative keywords to
 - ### Search on Google:<a name="goog"></a>
   - Here's how it works:
 
-First, it asks the user to enter something they want to search for on Google.
-With the help of a special module called "Webbrowser," it performs the search operation.
-It opens a web browser window and shows the search results on Google.
+- First, it asks the user to enter something they want to search for on Google.
+- With the help of a special module called "Webbrowser," it performs the search operation.
+- It opens a web browser window and shows the search results on Google.
 
     ```python
     Test_string = input(placeholder="YouTube Search", required=True)
