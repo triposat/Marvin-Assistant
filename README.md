@@ -37,15 +37,25 @@
 - [Conclusion](#conc)
 
 ## Introduction:<a name="Intro"></a>
-This project can do any web-related activity effectively, such as sending emails, searching on YouTube and Google, locating places, telling a joke, sending alerts to your phone, battery-related notifications, and so on.
+This project helps you do many things on the internet. You can send emails, search on YouTube and Google, find places, enjoy jokes, get phone alerts, and more.
 
-When we run the code, it will display an appealing interface with several options and a next button. Following that, you will see a ***search box*** where you can input anything you want, such as google, wikipedia, and so on.
+When you start the project, it shows a nice screen with options and a next button. Then, you'll see a box where you can type what you want, like searching on Google or Wikipedia.
 
-If you enter spelling that does not exist, it will display an error message, and you will be unable to continue. It will display ***successful messages***, ***warning messages***, and ***pop-up messages*** for any information.
+If you type something wrong or that **doesn't exist**, it shows an error message, and you **can't continue**. It also shows messages when things work well, warnings, and important info in small windows.
 
 ## What can Assistant do?<a name="do"></a>
 - ### Wish you: <a name="wish"></a>
-  - It will wish you according to the time, using the ***datetime*** module.
+  - What can Assistant do?
+It can greet you based on the time using a special module called **"datetime".**
+
+Here's how it works:
+
+The code calculates the current hour using "datetime.datetime.now().hour".
+Then, it uses if-else loops to figure out the best greeting for that time.
+If the hour is between 5 AM and 12 PM, it says "Good Morning".
+If the hour is between 12 PM and 5 PM, it says "Good Afternoon".
+Otherwise, it says "Good Evening".
+
   - Using the below code, it will first calculate an hour.
     
     ```python
