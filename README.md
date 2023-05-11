@@ -96,10 +96,10 @@ If the input is not found on Wikipedia, it suggests some alternative keywords to
     
 - ### Search on YouTube: <a name="you"></a>
   - Here's how it works:
-First, it asks the user to enter something they want to search for on YouTube.
-With the help of a special module called "Webbrowser," it performs the search operation.
-It opens a web browser window and shows the search results on YouTube.
-    
+	- First, it asks the user to enter something they want to search for on YouTube.
+	- With the help of a special module called "Webbrowser," it performs the search operation.
+	- It opens a web browser window and shows the search results on YouTube.
+
     ```python
     Test_string = input(placeholder="YouTube Search", required=True)
     ```
