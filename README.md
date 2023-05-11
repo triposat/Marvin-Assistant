@@ -45,8 +45,7 @@ If you type something wrong or that **doesn't exist**, it shows an error message
 
 ## What can Assistant do?<a name="do"></a>
 - ### Wish you: <a name="wish"></a>
-  - What can Assistant do?
-It can greet you based on the time using a special module called **"datetime".**
+  - It can greet you based on the time using a special module called **"datetime".**
 
 Here's how it works:
 
@@ -73,8 +72,13 @@ Otherwise, it says "Good Evening".
 
     ```
 - ### Search on Wikipedia:<a name="wiki"></a>
-  - It will first ask the user for input, and with the help of the ***Wikipedia*** module, it performs all the operations.
-    
+  - Here's how it works:
+
+First, it asks the user to enter something they want to search for on Wikipedia.
+Using the Wikipedia module, it checks if the input exists on Wikipedia.
+If it does, it tries to get a summary of the topic using relevant keywords.
+If the input is not found on Wikipedia, it suggests some alternative keywords to search for.
+
     ```python
     Test_string = input(placeholder="Wikipedia Search", required=True)
     ```
@@ -88,8 +92,13 @@ Otherwise, it says "Good Evening".
     ```python
     Test_string = wikipedia.suggest(Test_string)
     ```
+    
+    
 - ### Search on YouTube: <a name="you"></a>
-  - It will first ask the user for input, and with the help of the ***Webbrowser*** module, it performs all the operations.
+  - Here's how it works:
+First, it asks the user to enter something they want to search for on YouTube.
+With the help of a special module called "Webbrowser," it performs the search operation.
+It opens a web browser window and shows the search results on YouTube.
     
     ```python
     Test_string = input(placeholder="YouTube Search", required=True)
@@ -99,8 +108,14 @@ Otherwise, it says "Good Evening".
     ```python
     webbrowser.open(f"https://www.youtube.com/results?search_query={Test_string}")
     ```
+    
+    
 - ### Search on Google:<a name="goog"></a>
-  - It will first ask the user for input, and with the help of the ***Webbrowser*** module, it performs all the operations.
+  - Here's how it works:
+
+First, it asks the user to enter something they want to search for on Google.
+With the help of a special module called "Webbrowser," it performs the search operation.
+It opens a web browser window and shows the search results on Google.
 
     ```python
     Test_string = input(placeholder="YouTube Search", required=True)
