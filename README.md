@@ -148,8 +148,8 @@ Here's how it works:
    
 - ### Keep Notes: <a name="notes"></a>
     - To create a new note:
-	- Provide a title and the contents for the note.
-	- The assistant uses a special library called SQLAlchemy, which stores and tracks the 		notes using a database called SQLite.
+		- Provide a title and the contents for the note.
+		- The assistant uses a special library called SQLAlchemy, which stores and 		     tracks the notes using a database called SQLite.
 
 
     - **Creating the database:**</br>
@@ -162,8 +162,8 @@ Here's how it works:
 	    metadata.create_all(engine)
 	    ```
     - **Enterting a note:** 
-	- When entering a note, this function is called.
-	- The new note is saved in the database with the provided title and contents.
+		- When entering a note, this function is called.
+		- The new note is saved in the database with the provided title and contents.
     
 	    ```python
 	    def enterNote(title,note):
