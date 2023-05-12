@@ -123,7 +123,7 @@ Here's how it works:
   - For searching on Google, it will now use the ***open*** function specified in the webbrowser module.
 
     ```python
-    webbrowser.open(f"https://www.youtube.com/results?search_query={Test_string}")
+    webbrowser.open(f"https://www.youtube.com/results?search_query={Test_string}") 
     ```
 - ### Send Emails:<a name="mail"></a>
   - **Register User Email ID:** To allow yagmail to access our Gmail account and send emails, we register our Gmail username and password. 
