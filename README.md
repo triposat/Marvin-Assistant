@@ -216,8 +216,8 @@ Here's how it works:
 		- The assistant will quickly play the exact song or music.
 		- It uses two libraries: "Pytube" to access the songs/music and "Playsound" to play them.
     
-- ### Generating the URL of the Song:
-To generate the song URL from the song name:
+- Generating the URL of the Song:
+	- To generate the song URL from the song name:
 		- The code takes the song name and searches for it on YouTube.
 		- It retrieves the video ID from the search results to create the URL.
 	    ```python
