@@ -147,9 +147,11 @@ Here's how it works:
       ```
    
 - ### Keep Notes: <a name="notes"></a>
-    - For creating a new note, you need to give a **title** for a note and the **contents** to be noted.
-    - The assistant uses **SQLAlchemy**, a database library which uses **SQLite** in the backend, to store and keep track of the notes
-    - If you need to view a note, you need to enter only the title of the note. After entering the title, the contents of the note will be displayed.
+    - To create a new note:
+	- Provide a title and the contents for the note.
+	- The assistant uses a special library called SQLAlchemy, which stores and tracks the 		notes using a database called SQLite.
+
+
     - **Creating the database:**</br>
 
 	    ```python
@@ -159,7 +161,9 @@ Here's how it works:
 		 'Title', db.Text(), nullable=False, primary_key=True), db.Column('Note', db.Text(), default=''))
 	    metadata.create_all(engine)
 	    ```
-    - **Enterting a note:** While entering a note, this function gets invoked and the new note is saved in the database.</br>
+    - **Enterting a note:** 
+	- When entering a note, this function is called.
+	- The new note is saved in the database with the provided title and contents.
     
 	    ```python
 	    def enterNote(title,note):
@@ -172,7 +176,9 @@ Here's how it works:
 	    except Exception as e:
 		print(e)
 	    ```
-    - **Viewing a note:** While we need to view a note, this function gets invoked and the note is displayed.</br>
+    - **Viewing a note:** 
+	    - When viewing a note, this function is called.
+	    - The note with the specified title is retrieved from the database and displayed.<br>
     
 	    ```python
 	    def displayNote(title):
