@@ -228,7 +228,11 @@ Here's how it works:
 		url = "https://www.youtube.com/watch?v=" + video_ids[0]
 	    ```
     - After the generation of the song URL, we can play the song using it: </br>
-    
+    	- To play the song:
+		- The generated URL is used to access the song on YouTube.
+		- The audio stream of the song is extracted and saved as an MP3 file.
+		- Finally, the song is played using the "Playsound" library.
+
 	    ```python
 	    def playSong(url):
 	      yt = YouTube(str(url))
