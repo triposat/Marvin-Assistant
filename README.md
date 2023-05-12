@@ -195,8 +195,8 @@ Here's how it works:
 	    ```
         
 - ### Time: <a name="time"></a>
-    - To find the current time, we'll use the ***datetime*** module.
-    - We may simply find time using the approach outlined below.
+		- We use the datetime module and a specific command to get the current time.
+		- The code provides the time in a specific format: hour, minute, and AM/PM.
       
       ```python
       datetime.datetime.today().strftime("%I:%M %p")
@@ -212,11 +212,14 @@ Here's how it works:
     month_name = datetime_object.strftime("%b")
      ```
  - ### Play music: <a name="music"></a>
-    - You just need to enter the name of the song or music (without spaces).
-    - In a matter of seconds, the assistant can play the exact song or music.
-    - For this, we have used the libraries **Pytube** for accessing the songs/music and **Playsound** for playing the song/music.
-    - Generating the URL of the song from the song name:</br>
+ 		 - Enter the name of the song or music without spaces.
+		- The assistant will quickly play the exact song or music.
+		- It uses two libraries: "Pytube" to access the songs/music and "Playsound" to play them.
     
+- ### Generating the URL of the Song:
+To generate the song URL from the song name:
+		- The code takes the song name and searches for it on YouTube.
+		- It retrieves the video ID from the search results to create the URL.
 	    ```python
 	    def generateURL(songName):	
 		    search_keyword= str(songName)
