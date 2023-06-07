@@ -35,7 +35,7 @@
   - [Empty Recycle Bin](#bin)
 - [Output](#out)
 - [Conclusion](#conc)
-- FAQ (Frequently Asked Questions) (#faq)
+- FAQ (Frequently Asked Questions)
 
 ## Introduction:<a name="Intro"></a>
 This project helps you do many things on the internet. You can send emails, search on YouTube and Google, find places, enjoy jokes, get phone alerts, and more.
@@ -411,6 +411,22 @@ A: The learning and improvement capabilities of Marvin-Assistant depend on the s
 
 Q: How secure is the data and information provided to Marvin-Assistant?
 A: The security and privacy of the data and information provided to Marvin-Assistant depend on the implementation and the measures taken to ensure confidentiality and data protection. It's important to follow best practices for securing user data when developing and deploying a chatbot or assistant.
+
+## Troubleshooting Questions/Answers for Dyselxia Students 
+Q: I'm finding it difficult to read the responses from Marvin-Assistant. Is there a way to make the text more readable?
+A: Absolutely! You can try adjusting the font size, color, or contrast settings of the interface where Marvin-Assistant is displayed. Increasing the font size, using a dyslexia-friendly font, or choosing high contrast options can often improve readability. Additionally, using text-to-speech or screen reader software might be helpful to have the responses read aloud to you.
+
+Q: I frequently misspell words in my queries to Marvin-Assistant, and it affects the accuracy of the responses. How can I overcome this issue?
+A: Dyslexia can make spelling challenging, but there are strategies to help. If possible, consider using a spell-checking tool or enabling auto-correction features on the device or application you are using to interact with Marvin-Assistant. You can also try using voice-to-text software or dictation tools to input your queries, which may help mitigate spelling errors. Remember, Marvin-Assistant's understanding may not be perfect, so providing clear and concise queries can also improve accuracy.
+
+Q: I sometimes get overwhelmed by long or complex responses. Can I request Marvin-Assistant to provide shorter, simplified explanations?
+A: Yes, you can definitely ask Marvin-Assistant to provide shorter or simplified explanations. You can phrase your request in a way that asks for concise answers or asks Marvin-Assistant to break down complex information into simpler terms. Feel free to specify your preferences for more accessible responses, and the assistant can adapt accordingly.
+
+Q: I struggle with remembering information from previous interactions with Marvin-Assistant. Is there a way to review past conversations?
+A: Absolutely! You can ask Marvin-Assistant if it has a history feature or if it can recap previous conversations. If the feature is available, you might be able to access a summary or transcript of your past interactions. This way, you can easily refresh your memory and refer back to any information you may have forgotten.
+
+Q: I have difficulty with reading and comprehension. Can Marvin-Assistant provide information using alternative formats, such as audio or visual aids?
+A: Depending on the capabilities of Marvin-Assistant, it may be possible for it to provide information using alternative formats. You can ask if it supports audio responses or if it can provide visual aids, such as images, diagrams, or videos, to enhance understanding. If these features are not available, consider using text-to-speech software or requesting assistance from someone who can convert the text-based information into a more accessible format for you.
 
 ___________________________________
 
