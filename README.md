@@ -44,6 +44,23 @@ When you start the project, it shows a nice screen with options and a next butto
 
 If you type something wrong or that **doesn't exist**, it shows an error message, and you **can't continue**. It also shows messages when things work well, warnings, and important info in small windows.
 
+If you're new to the command line interface (CLI) or have never used it before, don't worry! Marvin-Assistant can guide you through the process and make it easier to interact with the chatbot using simple text commands. The command line interface allows you to communicate with Marvin-Assistant by typing commands or queries directly into a text-based interface.
+
+To get started, here are a few simple steps to help you navigate the CLI:
+
+Open the command line interface: Depending on your operating system, you can typically find the command line interface by searching for "Command Prompt" (Windows) or "Terminal" (macOS or Linux) in your applications or utilities folder.
+
+Launch Marvin-Assistant: Once you have the command line interface open, you can run Marvin-Assistant by executing the appropriate command. Refer to the documentation or README file of the Marvin-Assistant project for the specific command to launch the chatbot.
+
+Interacting with Marvin-Assistant: After launching Marvin-Assistant, you can start interacting with it by typing your questions or commands into the command line interface. Simply enter your query or command and press Enter to send it to Marvin-Assistant.
+
+Reading the responses: Marvin-Assistant will process your input and provide a response in the command line interface. You can read the response directly from the interface and proceed with further questions or follow-up commands.
+
+Exploring available commands or features: If you're unsure about the available commands or features of Marvin-Assistant, you can ask for a list of commands or request help. Marvin-Assistant will provide guidance and assist you in making the most of its capabilities.
+
+Remember, the command line interface might have its own set of commands and conventions, so it's a good idea to familiarize yourself with basic command line navigation and usage if you're new to it. However, rest assured that Marvin-Assistant aims to provide a user-friendly experience, even for those unfamiliar with the command line interface.
+
+
 ## What can Assistant do?<a name="do"></a>
 - ### Wish you: <a name="wish"></a>
   - It can greet you based on the time using a special module called **"datetime".**
