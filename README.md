@@ -35,17 +35,47 @@
   - [Empty Recycle Bin](#bin)
 - [Output](#out)
 - [Conclusion](#conc)
+- FAQ (Frequently Asked Questions)
 
 ## Introduction:<a name="Intro"></a>
-This project can do any web-related activity effectively, such as sending emails, searching on YouTube and Google, locating places, telling a joke, sending alerts to your phone, battery-related notifications, and so on.
+This project helps you do many things on the internet. You can send emails, search on YouTube and Google, find places, enjoy jokes, get phone alerts, and more.
 
-When we run the code, it will display an appealing interface with several options and a next button. Following that, you will see a ***search box*** where you can input anything you want, such as google, wikipedia, and so on.
+When you start the project, it shows a nice screen with options and a next button. Then, you'll see a box where you can type what you want, like searching on Google or Wikipedia.
 
-If you enter spelling that does not exist, it will display an error message, and you will be unable to continue. It will display ***successful messages***, ***warning messages***, and ***pop-up messages*** for any information.
+If you type something wrong or that **doesn't exist**, it shows an error message, and you **can't continue**. It also shows messages when things work well, warnings, and important info in small windows.
+
+
+## New to Command Line Interface. Check Here!
+
+If you're new to the command line interface (CLI) or have never used it before, don't worry! Marvin-Assistant can guide you through the process and make it easier to interact with the chatbot using simple text commands. The command line interface allows you to communicate with Marvin-Assistant by typing commands or queries directly into a text-based interface.
+
+To get started, here are a few simple steps to help you navigate the CLI:
+
+Open the command line interface: Depending on your operating system, you can typically find the command line interface by searching for "Command Prompt" (Windows) or "Terminal" (macOS or Linux) in your applications or utilities folder.
+
+Launch Marvin-Assistant: Once you have the command line interface open, you can run Marvin-Assistant by executing the appropriate command. Refer to the documentation or README file of the Marvin-Assistant project for the specific command to launch the chatbot.
+
+Interacting with Marvin-Assistant: After launching Marvin-Assistant, you can start interacting with it by typing your questions or commands into the command line interface. Simply enter your query or command and press Enter to send it to Marvin-Assistant.
+
+Reading the responses: Marvin-Assistant will process your input and provide a response in the command line interface. You can read the response directly from the interface and proceed with further questions or follow-up commands.
+
+Exploring available commands or features: If you're unsure about the available commands or features of Marvin-Assistant, you can ask for a list of commands or request help. Marvin-Assistant will provide guidance and assist you in making the most of its capabilities.
+
+Remember, the command line interface might have its own set of commands and conventions, so it's a good idea to familiarize yourself with basic command line navigation and usage if you're new to it. However, rest assured that Marvin-Assistant aims to provide a user-friendly experience, even for those unfamiliar with the command line interface.
+
 
 ## What can Assistant do?<a name="do"></a>
 - ### Wish you: <a name="wish"></a>
-  - It will wish you according to the time, using the ***datetime*** module.
+  - It can greet you based on the time using a special module called **"datetime".**
+
+Here's how it works:
+
+	- The code calculates the current hour using "datetime.datetime.now().hour".
+	- Then, it uses if-else loops to figure out the best greeting for that time.
+	- If the hour is between 5 AM and 12 PM, it says "Good Morning".
+	- If the hour is between 12 PM and 5 PM, it says "Good Afternoon".
+	- Otherwise, it says "Good Evening".
+
   - Using the below code, it will first calculate an hour.
     
     ```python
@@ -63,8 +93,13 @@ If you enter spelling that does not exist, it will display an error message, and
 
     ```
 - ### Search on Wikipedia:<a name="wiki"></a>
-  - It will first ask the user for input, and with the help of the ***Wikipedia*** module, it performs all the operations.
-    
+  - Here's how it works:
+
+	- First, it asks the user to enter something they want to search for on Wikipedia.
+	- Using the Wikipedia module, it checks if the input exists on Wikipedia.
+	- If it does, it tries to get a summary of the topic using relevant keywords.
+	- If the input is not found on Wikipedia, it suggests some alternative keywords to search for.
+
     ```python
     Test_string = input(placeholder="Wikipedia Search", required=True)
     ```
@@ -78,9 +113,14 @@ If you enter spelling that does not exist, it will display an error message, and
     ```python
     Test_string = wikipedia.suggest(Test_string)
     ```
-- ### Search on YouTube: <a name="you"></a>
-  - It will first ask the user for input, and with the help of the ***Webbrowser*** module, it performs all the operations.
     
+    
+- ### Search on YouTube: <a name="you"></a>
+  - Here's how it works:
+	- First, it asks the user to enter something they want to search for on YouTube.
+	- With the help of a special module called "Webbrowser," it performs the search operation.
+	- It opens a web browser window and shows the search results on YouTube.
+
     ```python
     Test_string = input(placeholder="YouTube Search", required=True)
     ```
@@ -89,8 +129,14 @@ If you enter spelling that does not exist, it will display an error message, and
     ```python
     webbrowser.open(f"https://www.youtube.com/results?search_query={Test_string}")
     ```
+    
+    
 - ### Search on Google:<a name="goog"></a>
-  - It will first ask the user for input, and with the help of the ***Webbrowser*** module, it performs all the operations.
+  - Here's how it works:
+
+	- First, it asks the user to enter something they want to search for on Google.
+	- With the help of a special module called "Webbrowser," it performs the search operation.
+	- It opens a web browser window and shows the search results on Google.
 
     ```python
     Test_string = input(placeholder="YouTube Search", required=True)
@@ -98,10 +144,10 @@ If you enter spelling that does not exist, it will display an error message, and
   - For searching on Google, it will now use the ***open*** function specified in the webbrowser module.
 
     ```python
-    webbrowser.open(f"https://www.youtube.com/results?search_query={Test_string}")
+    webbrowser.open(f"https://www.youtube.com/results?search_query={Test_string}") 
     ```
 - ### Send Emails:<a name="mail"></a>
-  - **Register User Email ID:** By registering, we allow the yagmail to access our Gmail account in consent to send emails. There is a need for an SMTP client to provide the authentication to the client for sending an email.  
+  - **Register User Email ID:** To allow yagmail to access our Gmail account and send emails, we register our Gmail username and password. 
   
     ```python
     yagmail.register("Sender’s Gmail Username", "Sender’s Gmail Password")
@@ -122,9 +168,11 @@ If you enter spelling that does not exist, it will display an error message, and
       ```
    
 - ### Keep Notes: <a name="notes"></a>
-    - For creating a new note, you need to give a **title** for a note and the **contents** to be noted.
-    - The assistant uses **SQLAlchemy**, a database library which uses **SQLite** in the backend, to store and keep track of the notes
-    - If you need to view a note, you need to enter only the title of the note. After entering the title, the contents of the note will be displayed.
+    - To create a new note:
+		- Provide a title and the contents for the note.
+		- The assistant uses a special library called SQLAlchemy, which stores and 		     tracks the notes using a database called SQLite.
+
+
     - **Creating the database:**</br>
 
 	    ```python
@@ -134,7 +182,9 @@ If you enter spelling that does not exist, it will display an error message, and
 		 'Title', db.Text(), nullable=False, primary_key=True), db.Column('Note', db.Text(), default=''))
 	    metadata.create_all(engine)
 	    ```
-    - **Enterting a note:** While entering a note, this function gets invoked and the new note is saved in the database.</br>
+    - **Enterting a note:** 
+		- When entering a note, this function is called.
+		- The new note is saved in the database with the provided title and contents.
     
 	    ```python
 	    def enterNote(title,note):
@@ -147,7 +197,9 @@ If you enter spelling that does not exist, it will display an error message, and
 	    except Exception as e:
 		print(e)
 	    ```
-    - **Viewing a note:** While we need to view a note, this function gets invoked and the note is displayed.</br>
+    - **Viewing a note:** 
+	    - When viewing a note, this function is called.
+	    - The note with the specified title is retrieved from the database and displayed.<br>
     
 	    ```python
 	    def displayNote(title):
@@ -164,8 +216,8 @@ If you enter spelling that does not exist, it will display an error message, and
 	    ```
         
 - ### Time: <a name="time"></a>
-    - To find the current time, we'll use the ***datetime*** module.
-    - We may simply find time using the approach outlined below.
+		- We use the datetime module and a specific command to get the current time.
+		- The code provides the time in a specific format: hour, minute, and AM/PM.
       
       ```python
       datetime.datetime.today().strftime("%I:%M %p")
@@ -181,11 +233,14 @@ If you enter spelling that does not exist, it will display an error message, and
     month_name = datetime_object.strftime("%b")
      ```
  - ### Play music: <a name="music"></a>
-    - You just need to enter the name of the song or music (without spaces).
-    - In a matter of seconds, the assistant can play the exact song or music.
-    - For this, we have used the libraries **Pytube** for accessing the songs/music and **Playsound** for playing the song/music.
-    - Generating the URL of the song from the song name:</br>
+ 		 - Enter the name of the song or music without spaces.
+		- The assistant will quickly play the exact song or music.
+		- It uses two libraries: "Pytube" to access the songs/music and "Playsound" to play them.
     
+- Generating the URL of the Song:
+	- To generate the song URL from the song name:
+		- The code takes the song name and searches for it on YouTube.
+		- It retrieves the video ID from the search results to create the URL.
 	    ```python
 	    def generateURL(songName):	
 		    search_keyword= str(songName)
@@ -194,7 +249,11 @@ If you enter spelling that does not exist, it will display an error message, and
 		url = "https://www.youtube.com/watch?v=" + video_ids[0]
 	    ```
     - After the generation of the song URL, we can play the song using it: </br>
-    
+    	- To play the song:
+			- The generated URL is used to access the song on YouTube.
+			- The audio stream of the song is extracted and saved as an MP3 file.
+			- Finally, the song is played using the "Playsound" library.
+
 	    ```python
 	    def playSong(url):
 	      yt = YouTube(str(url))
@@ -207,21 +266,23 @@ If you enter spelling that does not exist, it will display an error message, and
 	    ```
     
  - ### Send Notification:<a name="noti"></a>
-    - Go to ***Pushbullet*** and obtain the access token.
-    - Get your Access Token and use the PushBullet method to create an instance by providing the Access Token in the PushBullet function.
-    
+	- Visit Pushbullet and acquire the access token.
+	- Retrieve your Access Token and utilize the PushBullet method to create an instance by providing the Access Token in the PushBullet function. 
+
+  
       ```python
       PushBullet(access_token)
       ```
-   - Use the push_note function to send data and text inside the function. ***push_note*** will take two arguments i.e. data and text. the first argument will work as a Heading in the notification where 2nd argument is a text.
+   - Utilize the push_note function to send data and text. This function requires two arguments: data and text. The first argument serves as a heading in the notification, while the second argument represents the main text content.
    
        ```python
        pb.push_note(data, text)
        ```
 - ### Maths Calculations: <a name="maths"></a>
-    - The assistant can perform many sorts of mathematical calculations. It will act as verbal calculator
-    - **Arithmetic operations**: addition,subtraction,multiplication,division and finding the square root
-    - **Trignometrical operations**: sin,cos and tan
+    	-The assistant can help with various types of mathematical calculations. It can act as a verbal calculator, providing answers through spoken 	     	responses. It supports the following operations:
+	
+	- Arithmetic operations: Addition, subtraction, multiplication, division, and finding the square root.
+	Trigonometric operations: Sine, cosine, and tangent.
 
 	    **Examples**:
 	    ```
@@ -348,6 +409,44 @@ If you enter spelling that does not exist, it will display an error message, and
 
 ## Conclusion: <a name="conc"></a>
 This is how easy it is to create your own desktop assistant. You may add many more functionalities, such as sending messages in Slack, providing data on Covid-19 cases, and so forth. Have fun experimenting with and creating your own Alexa/Siri/Cortana.
+
+## FAQ (Frequently Asked Questions) 
+Q: What is Marvin-Assistant?
+A: Marvin-Assistant is an AI-powered chatbot designed to provide assistance and answer questions on a variety of topics.
+
+Q: How do I install and run Marvin-Assistant?
+A: To install and run Marvin-Assistant, you can follow the instructions provided in the project's documentation or README file on the GitHub repository.
+
+Q: What programming language is Marvin-Assistant built with?
+A: Marvin-Assistant is built using the Python programming language.
+
+Q: Can I customize the responses and behavior of Marvin-Assistant?
+A: Yes, you can customize the responses and behavior of Marvin-Assistant by modifying the code and configuration files according to your requirements.
+
+Q: Can Marvin-Assistant understand multiple languages?
+A: The language capabilities of Marvin-Assistant depend on its implementation. However, with appropriate configuration and language processing tools, it can be trained or adapted to understand and respond in multiple languages.
+
+Q: Is Marvin-Assistant capable of learning and improving over time?
+A: The learning and improvement capabilities of Marvin-Assistant depend on the specific implementation and training methods used. It is possible to incorporate machine learning techniques to enable learning and improvement over time.
+
+Q: How secure is the data and information provided to Marvin-Assistant?
+A: The security and privacy of the data and information provided to Marvin-Assistant depend on the implementation and the measures taken to ensure confidentiality and data protection. It's important to follow best practices for securing user data when developing and deploying a chatbot or assistant.
+
+## Troubleshooting Questions/Answers for Dyselxia Students 
+Q: I'm finding it difficult to read the responses from Marvin-Assistant. Is there a way to make the text more readable?
+A: Absolutely! You can try adjusting the font size, color, or contrast settings of the interface where Marvin-Assistant is displayed. Increasing the font size, using a dyslexia-friendly font, or choosing high contrast options can often improve readability. Additionally, using text-to-speech or screen reader software might be helpful to have the responses read aloud to you.
+
+Q: I frequently misspell words in my queries to Marvin-Assistant, and it affects the accuracy of the responses. How can I overcome this issue?
+A: Dyslexia can make spelling challenging, but there are strategies to help. If possible, consider using a spell-checking tool or enabling auto-correction features on the device or application you are using to interact with Marvin-Assistant. You can also try using voice-to-text software or dictation tools to input your queries, which may help mitigate spelling errors. Remember, Marvin-Assistant's understanding may not be perfect, so providing clear and concise queries can also improve accuracy.
+
+Q: I sometimes get overwhelmed by long or complex responses. Can I request Marvin-Assistant to provide shorter, simplified explanations?
+A: Yes, you can definitely ask Marvin-Assistant to provide shorter or simplified explanations. You can phrase your request in a way that asks for concise answers or asks Marvin-Assistant to break down complex information into simpler terms. Feel free to specify your preferences for more accessible responses, and the assistant can adapt accordingly.
+
+Q: I struggle with remembering information from previous interactions with Marvin-Assistant. Is there a way to review past conversations?
+A: Absolutely! You can ask Marvin-Assistant if it has a history feature or if it can recap previous conversations. If the feature is available, you might be able to access a summary or transcript of your past interactions. This way, you can easily refresh your memory and refer back to any information you may have forgotten.
+
+Q: I have difficulty with reading and comprehension. Can Marvin-Assistant provide information using alternative formats, such as audio or visual aids?
+A: Depending on the capabilities of Marvin-Assistant, it may be possible for it to provide information using alternative formats. You can ask if it supports audio responses or if it can provide visual aids, such as images, diagrams, or videos, to enhance understanding. If these features are not available, consider using text-to-speech software or requesting assistance from someone who can convert the text-based information into a more accessible format for you.
 
 ___________________________________
 
