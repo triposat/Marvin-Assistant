@@ -245,21 +245,23 @@ Here's how it works:
 	    ```
     
  - ### Send Notification:<a name="noti"></a>
-    - Go to ***Pushbullet*** and obtain the access token.
-    - Get your Access Token and use the PushBullet method to create an instance by providing the Access Token in the PushBullet function.
-    
+	- Visit Pushbullet and acquire the access token.
+	- Retrieve your Access Token and utilize the PushBullet method to create an instance by providing the Access Token in the PushBullet function. 
+
+  
       ```python
       PushBullet(access_token)
       ```
-   - Use the push_note function to send data and text inside the function. ***push_note*** will take two arguments i.e. data and text. the first argument will work as a Heading in the notification where 2nd argument is a text.
+   - Utilize the push_note function to send data and text. This function requires two arguments: data and text. The first argument serves as a heading in the notification, while the second argument represents the main text content.
    
        ```python
        pb.push_note(data, text)
        ```
 - ### Maths Calculations: <a name="maths"></a>
-    - The assistant can perform many sorts of mathematical calculations. It will act as verbal calculator
-    - **Arithmetic operations**: addition,subtraction,multiplication,division and finding the square root
-    - **Trignometrical operations**: sin,cos and tan
+    	-The assistant can help with various types of mathematical calculations. It can act as a verbal calculator, providing answers through spoken 	     	responses. It supports the following operations:
+	
+	- Arithmetic operations: Addition, subtraction, multiplication, division, and finding the square root.
+	Trigonometric operations: Sine, cosine, and tangent.
 
 	    **Examples**:
 	    ```
