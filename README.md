@@ -35,7 +35,7 @@
   - [Empty Recycle Bin](#bin)
 - [Output](#out)
 - [Conclusion](#conc)
-- FAQ (Frequently Asked Questions) 
+- FAQ (Frequently Asked Questions) (#faq)
 
 ## Introduction:<a name="Intro"></a>
 This project helps you do many things on the internet. You can send emails, search on YouTube and Google, find places, enjoy jokes, get phone alerts, and more.
