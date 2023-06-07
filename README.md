@@ -44,6 +44,9 @@ When you start the project, it shows a nice screen with options and a next butto
 
 If you type something wrong or that **doesn't exist**, it shows an error message, and you **can't continue**. It also shows messages when things work well, warnings, and important info in small windows.
 
+
+## New to Command Line Interface. Check Here!
+
 If you're new to the command line interface (CLI) or have never used it before, don't worry! Marvin-Assistant can guide you through the process and make it easier to interact with the chatbot using simple text commands. The command line interface allows you to communicate with Marvin-Assistant by typing commands or queries directly into a text-based interface.
 
 To get started, here are a few simple steps to help you navigate the CLI:
