@@ -33,6 +33,7 @@
   - [reSTART](#restart)
   - [Take a Photo](#photo)
   - [Empty Recycle Bin](#bin)
+- [Contribute](#contribute)
 - [Output](#out)
 - [Conclusion](#conc)
 
@@ -345,6 +346,83 @@ If you enter spelling that does not exist, it will display an error message, and
       ```
 ## Output: <a name="out"></a>
 <p align="center"><img width="80%" src="https://user-images.githubusercontent.com/69134468/128981899-4cc19a45-1919-40bf-bcda-49d39c2c2b05.PNG"></p>
+
+## Installation:
+
+To run the Mini Assistant project, you'll need to install some Python libraries. You can install these libraries using `pip` with the following commands:
+
+1. pip install pushbullet.py==0.9.1
+
+2. pip install pytube
+
+3. pip install opencv-python
+
+4. pip install winshell
+
+5. pip install SQLAlchemy
+
+6. pip install pyspellchecker
+
+7. pip install wikipedia
+
+8. pip install pyjokes
+
+9. pip install psutil
+
+10. pip install yagmail
+
+## How to Contribute: <a name="contribute"></a>
+
+We welcome contributions from the community to enhance and improve the Mini Assistant project. If you'd like to contribute, please follow these guidelines:
+
+1. **Fork the Repository:**
+   - Click the "Fork" button on the top right corner of this repository to create your own copy.
+
+2. **Clone the Repository:**
+   - Clone your forked repository to your local machine using the following command:
+     ```
+     git clone https://github.com/triposat/Marvin-Assistant.git
+     ```
+
+3. **Create a Branch:**
+   - Create a new branch to work on your feature or bug fix:
+     ```
+     git checkout -b feature/your-feature-name
+     ```
+
+4. **Make Changes:**
+   - Make your desired changes or additions to the codebase.
+
+5. **Commit Changes:**
+   - Commit your changes with a descriptive commit message:
+     ```
+     git commit -m "Add your commit message here"
+     ```
+
+6. **Push Changes:**
+   - Push your changes to your forked repository:
+     ```
+     git push origin feature/your-feature-name
+     ```
+
+7. **Create a Pull Request:**
+   - Go to the original repository on GitHub and click the "New Pull Request" button.
+   - Provide a clear title and description for your pull request.
+   - Click "Create Pull Request" to submit your changes for review.
+
+8. **Review and Discussion:**
+   - Participate in the discussion and address any feedback or questions related to your pull request.
+
+9. **Merge Pull Request:**
+   - Once your pull request is approved, it will be merged into the main project.
+
+10. **Thank You!**
+    - Thank you for contributing to Mini Assistant. Your contributions help make this project better for everyone.
+
+If you have any questions or need assistance during the contribution process, please feel free to open an issue or reach out to us via [GitHub Issues](https://github.com/Iamtripathisatyam/Mini_Assistant/issues).
+
+We appreciate your contributions and look forward to collaborating with you!
+
 
 ## Conclusion: <a name="conc"></a>
 This is how easy it is to create your own desktop assistant. You may add many more functionalities, such as sending messages in Slack, providing data on Covid-19 cases, and so forth. Have fun experimenting with and creating your own Alexa/Siri/Cortana.
